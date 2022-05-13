@@ -1,0 +1,30 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import "../sass2/maps";
+
+main{
+    color: $black;
+    text-align: center;
+    background-color: $color;
+    img{
+        width: map-get($img, ancho);
+        height: map-get($img, alto);
+        
+    }
+    h1{
+        color: $black;
+    }
+}
+
+section{
+    width: $ancho;
+    @extend .sass-seo;
+    div{
+        width: $ancho;
+        p{
+            @include fuentes;
+            text-align: $alinear-al-centro;
+        }
+    }
+}
